@@ -6,6 +6,8 @@ ul, ol { list-style: none; }
 h1,h2,h3,h4,h5,h6{ font-weight: normal; }
 .clearfix::after { content: ''; display: block; clear: both; }
 
+.icon {  width: 1em;  height: 1em;vertical-align: -0.15em;  fill: currentColor;overflow: hidden;}
+
 [data-x].active{
   outline: 10px solid red;
 }
@@ -115,9 +117,8 @@ body > main .downloadResume:hover {
 .selfIntroduction { max-width: 940px; margin-left: auto; margin-right: auto; text-align: center; font-family: kai; line-height: 1.8; font-size: 18px; }
 
 section.skills,
-section.portfolio{ max-width: 940px; margin-left: auto; margin-right: auto; margin-top: 80px; }
-section.skills > h2 ,
-section.portfolio > h2 { text-align: center; color: #3d4451; font-size: 34px; line-height: 1.2; font-weight: 600; }
+section.portfolio{ max-width: 940px; margin: 100px auto; }
+section.skills > h2 ,section.portfolio h2 ,section.message > h2 { text-align: center; color: #3d4451; font-size: 34px; line-height: 1.2; font-weight: 600; }
 section.skills h3 { font-size: 14px; line-height: 1.1; padding-right: 40px; }
 section.skills > ol { background: white; box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5); padding: 42px 50px 10px; margin-top: 30px; }
 section.skills > ol > li { float: left; width: 48%; box-sizing: border-box; }
@@ -129,17 +130,33 @@ width: 70%; border-radius: 2px; transform: translateX(0); transition: all 2.5s; 
 section.skills.sink .progress{
   transform: translateX(-100%);
 }
+#siteWorks > h2{
+  margin-bottom: 34px;
+}
+.swiper-container {
+  box-shadow:0px 0px 8px -3px #333333;
+  width: 801px;
+  height: 534px;
+}  
+.swiper-button-prev,.swiper-button-next {
+  display: block;
+  opacity: 0.8;
+}
 
-section.portfolio { text-align: center; margin-bottom: 100px; } 
-section.portfolio > nav{ text-align: center; }
-section.portfolio > nav > ol{ margin: 0 auto; display: inline-block; vertical-align: top; }
-section.portfolio > nav > ol > li{ float: left; margin-left: 40px; cursor: pointer; }
-section.portfolio > nav > ol > li:first-child{ margin-left: 0; }
-section.portfolio > nav{ display: inline-block; vertical-align: top; margin-top: 32px; }
-section.portfolio > nav .bar{ height: 5px; background: white; margin-top: 5px; margin-bottom: 28px; border-radius: 2px; }
-section.portfolio > nav .bar-inner{ height: 100%; background: #E6686A; border-radius: 2px; transition: all 0.3s; }
-section.portfolio > nav .bar.state-1 .bar-inner{ margin-left: 0; width: 50px; }
-section.portfolio > nav .bar.state-2 .bar-inner{ margin-left: 65px; width: 50px; }
-section.portfolio > nav .bar.state-3 .bar-inner{ margin-left: 140px; width: 96px; } 
-section.portfolio .works{ position: relative; } 
-section.portfolio .works > .big, section.portfolio .works > .small { position: absolute; }
+section.message {
+  margin-top: -30px;
+  text-align: center;
+}
+section.message > h2 {
+margin: 0 auto 28px
+}
+section.message > ol{
+  max-width: 700px;
+  margin: 0 auto;
+  border-top: 1px solid #DDD;
+}
+section.message > ol > li {
+  text-align: left;
+  padding: 16px;
+  border-bottom: 1px solid #DDD;
+}
