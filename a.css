@@ -146,6 +146,7 @@ section.skills.sink .progress{
 section.message {
   margin-top: -30px;
   text-align: center;
+  margin-bottom: 200px;
 }
 section.message > h2 {
 margin: 0 auto 28px
@@ -159,4 +160,8 @@ section.message > ol > li {
   text-align: left;
   padding: 16px;
   border-bottom: 1px solid #DDD;
+}
+body >.siteBottom {
+  height:60px;
+  background-color: #DDDDDD
 }
